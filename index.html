@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Team99 | IoT & Cyber Security Student Developers — GGITS Jabalpur</title>
-<meta name="description" content="Team99 is a 3-member student developer team from GGITS Jabalpur (IoT & Cyber Security incl. Blockchain) building fast websites, apps and AI-hardware projects like the Smart AI-Based Attendance System.">
+<title>Team99 | IoT &amp; Cyber Security Student Developers — GGITS Jabalpur</title>
+<meta name="description" content="Team99 is a 3-member student developer team from GGITS Jabalpur (IoT &amp; Cyber Security incl. Blockchain) building fast websites, apps and AI-hardware projects like the Smart AI-Based Attendance System.">
 <meta name="keywords" content="Team99, GGITS Jabalpur, Gyan Ganga Institute of Technology and Sciences, IoT Cyber Security student developers, Smart AI Attendance System, Akshat Singh Baghel, Mohammad Naved, Aryan Vishwakarma">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#060a12">
+<meta name="theme-color" content="#121010">
 <link rel="canonical" href="https://team99.dev/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Team99 | IoT & Cyber Security Student Developers — GGITS Jabalpur">
+<meta property="og:title" content="Team99 | IoT &amp; Cyber Security Student Developers — GGITS Jabalpur">
 <meta property="og:description" content="A 3-member student developer team from GGITS Jabalpur building fast websites, apps and AI-hardware projects — including the Smart AI-Based Attendance System.">
 <meta property="og:url" content="https://team99.dev/">
 <meta property="og:site_name" content="Team99">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Team99 | IoT & Cyber Security Student Developers — GGITS Jabalpur">
+<meta name="twitter:title" content="Team99 | IoT &amp; Cyber Security Student Developers — GGITS Jabalpur">
 <meta name="twitter:description" content="A 3-member student developer team from GGITS Jabalpur building fast websites, apps and AI-hardware projects — including the Smart AI-Based Attendance System.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <script type="application/ld+json">
@@ -45,234 +45,304 @@
 </head>
 <body>
 
-<div class="bg-glow"></div>
+<!-- Deep space -->
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-<header class="navbar" id="navbar">
-  <div class="container nav-inner">
-    <a href="#home" class="logo">Team<span>99</span></a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#team">Team</a>
-      <a href="#projects">Projects</a>
-      <a href="#join">Join Us</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+<!-- HUD chrome -->
+<header class="hud hud-top">
+  <a href="#intro" class="hud-brand">
+    <span class="hud-mark" aria-hidden="true"></span>
+    <span>Team99</span>
+  </a>
+  <div class="hud-top-right">
+    <span class="hud-meta">*PORTFOLIO — 2K26</span>
+    <button class="hud-menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">MENU</button>
   </div>
 </header>
 
+<nav class="menu" id="menu" aria-label="Main">
+  <a href="#intro"><span class="idx">01</span> Intro</a>
+  <a href="#pitch"><span class="idx">02</span> Pitch</a>
+  <a href="#skills"><span class="idx">03</span> Skills</a>
+  <a href="#stack"><span class="idx">04</span> Stack</a>
+  <a href="#team"><span class="idx">05</span> Team</a>
+  <a href="#projects"><span class="idx">06</span> Projects</a>
+  <a href="#join"><span class="idx">07</span> Join Us</a>
+  <a href="#contact"><span class="idx">08</span> Contact</a>
+</nav>
+
+<footer class="hud hud-bottom">
+  <div class="hud-section">SECTION <b id="sectionName">INTRO</b><span class="caret" aria-hidden="true">^</span></div>
+  <div class="hud-hint" id="scrollHint">SCROLL TO FLY</div>
+</footer>
+
+<div class="rail" aria-hidden="true"><div class="rail-fill" id="railFill"></div></div>
+
 <main>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero-inner">
-      <p class="eyebrow">// a small team, building real things</p>
-      <h1>We are <span class="gradient-text">Team99</span></h1>
-      <p class="hero-sub">Three builders. One goal — ship fast, low-cost, reliable software and hardware
-        that actually works. From responsive websites to AI-powered systems, we design, build and deploy it all.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Our Work</a>
-        <a href="#team" class="btn btn-ghost">Meet the Team</a>
+  <!-- INTRO -->
+  <section class="panel panel-intro" id="intro" data-section="INTRO">
+    <div class="panel-inner intro-grid">
+      <div>
+        <h1 class="display">
+          <span class="d-outline">TEAM</span>
+          <span class="d-solid">99</span>
+        </h1>
+        <p class="paren">( GGITS &nbsp;·&nbsp; JABALPUR )</p>
+        <ul class="tick-list">
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>AI / ML Integration</li>
+          <li>IoT &amp; Embedded</li>
+        </ul>
+        <div class="actions">
+          <a href="#projects" class="btn">View Our Work</a>
+          <a href="#team" class="btn btn-quiet">Meet the Team</a>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Team Members</span></div>
-        <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">Live Project</span></div>
-        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Coming Soon</span></div>
+
+      <div class="intro-side">
+        <figure class="frame frame-tilt-a">
+          <img src="assets/akshat.png" alt="Akshat Singh Baghel" loading="lazy">
+        </figure>
+        <figure class="frame frame-tilt-b">
+          <img src="assets/naved.jpeg" alt="Mohammad Naved" loading="lazy">
+        </figure>
+        <figure class="frame frame-tilt-c">
+          <img src="assets/aryan.jpeg" alt="Aryan Vishwakarma" loading="lazy">
+        </figure>
+      </div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Members</span></div>
+      <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">Live Project</span></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Incoming</span></div>
+    </div>
+  </section>
+
+  <!-- PITCH -->
+  <section class="panel panel-center" id="pitch" data-section="PITCH">
+    <div class="panel-inner">
+      <p class="eyebrow">02 — Elevator Pitch</p>
+      <p class="statement statement-lg">We build fast, low-cost, reliable software and hardware
+        that actually works. From responsive websites to AI-powered systems — we design it,
+        build it, and ship it.</p>
+    </div>
+    <div class="sweep" aria-hidden="true">
+      <div class="sweep-track">
+        <span>TEAM99</span><span>✦</span><span>TEAM99</span><span>✦</span>
+        <span>TEAM99</span><span>✦</span><span>TEAM99</span><span>✦</span>
+        <span>TEAM99</span><span>✦</span><span>TEAM99</span><span>✦</span>
+        <span>TEAM99</span><span>✦</span><span>TEAM99</span><span>✦</span>
       </div>
     </div>
   </section>
 
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>GGITS JABALPUR</span><span>·</span><span>IoT &amp; CYBER SECURITY</span><span>·</span>
-      <span>WEB DEVELOPMENT</span><span>·</span><span>AI / ML</span><span>·</span>
-      <span>EMBEDDED SYSTEMS</span><span>·</span><span>UI / UX</span><span>·</span>
-      <span>GGITS JABALPUR</span><span>·</span><span>IoT &amp; CYBER SECURITY</span><span>·</span>
-      <span>WEB DEVELOPMENT</span><span>·</span><span>AI / ML</span><span>·</span>
-      <span>EMBEDDED SYSTEMS</span><span>·</span><span>UI / UX</span><span>·</span>
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <div class="ticker-track">
+        <span>GGITS JABALPUR</span><span>✦</span><span>IoT &amp; CYBER SECURITY</span><span>✦</span>
+        <span>WEB DEVELOPMENT</span><span>✦</span><span>AI / ML</span><span>✦</span>
+        <span>EMBEDDED SYSTEMS</span><span>✦</span><span>UI / UX</span><span>✦</span>
+        <span>GGITS JABALPUR</span><span>✦</span><span>IoT &amp; CYBER SECURITY</span><span>✦</span>
+        <span>WEB DEVELOPMENT</span><span>✦</span><span>AI / ML</span><span>✦</span>
+        <span>EMBEDDED SYSTEMS</span><span>✦</span><span>UI / UX</span><span>✦</span>
+      </div>
     </div>
   </div>
 
   <!-- SKILLS -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <p class="section-tag reveal">What We Do</p>
-      <h2 class="section-title reveal">Our Skills</h2>
-      <p class="section-desc reveal">We work across the stack — software, hardware and everything that connects them.</p>
+  <section class="panel" id="skills" data-section="SKILLS">
+    <div class="panel-inner">
+      <p class="eyebrow">03 — What We Do</p>
+      <h2 class="heading">Our Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9S9.5 5.7 12 3Z"/></svg></div>
-          <h3>Web Development</h3>
-          <p>Fast, responsive, and modern websites built with clean, maintainable code.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></div>
-          <h3>App Development</h3>
-          <p>Cross-platform apps focused on smooth UX and real-world performance.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M19.5 4.5l-2 2M6.5 17.5l-2 2"/></svg></div>
-          <h3>AI / ML Integration</h3>
-          <p>Practical AI features — recognition, automation, and smart decisioning.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="1.5"/><circle cx="9" cy="9" r="1.3" fill="currentColor" stroke="none"/><circle cx="15" cy="15" r="1.3" fill="currentColor" stroke="none"/><path d="M9 10.3V15M15 9v4.7M9 9h4M11 15h4"/></svg></div>
-          <h3>Circuit &amp; IoT Design</h3>
-          <p>Low-cost, easy-to-build circuits that bridge hardware with software.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21c1-4 3-14 9-16 4-1.4 8 1.6 8 6 0 3-2 5-5 5H9"/><circle cx="8.5" cy="15.5" r="1.3" fill="currentColor" stroke="none"/></svg></div>
-          <h3>UI / UX Design</h3>
-          <p>Clean, intuitive interfaces that make products easy to use.</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 18a4.5 4.5 0 0 1-1-8.9 5.5 5.5 0 0 1 10.6-2A4.5 4.5 0 0 1 17 18H7Z"/></svg></div>
-          <h3>Backend &amp; Cloud</h3>
-          <p>Reliable APIs, databases, and cloud infrastructure that scale.</p>
-        </div>
-      </div>
+      <ol class="index-list">
+        <li>
+          <span class="idx">01</span>
+          <span class="il-name">Web Development</span>
+          <span class="il-note">Fast, responsive, and modern websites built with clean, maintainable code.</span>
+        </li>
+        <li>
+          <span class="idx">02</span>
+          <span class="il-name">App Development</span>
+          <span class="il-note">Cross-platform apps focused on smooth UX and real-world performance.</span>
+        </li>
+        <li>
+          <span class="idx">03</span>
+          <span class="il-name">AI / ML Integration</span>
+          <span class="il-note">Practical AI features — recognition, automation, and smart decisioning.</span>
+        </li>
+        <li>
+          <span class="idx">04</span>
+          <span class="il-name">Circuit &amp; IoT Design</span>
+          <span class="il-note">Low-cost, easy-to-build circuits that bridge hardware with software.</span>
+        </li>
+        <li>
+          <span class="idx">05</span>
+          <span class="il-name">UI / UX Design</span>
+          <span class="il-note">Clean, intuitive interfaces that make products easy to use.</span>
+        </li>
+        <li>
+          <span class="idx">06</span>
+          <span class="il-name">Backend &amp; Cloud</span>
+          <span class="il-note">Reliable APIs, databases, and cloud infrastructure that scale.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="panel panel-center" id="stack" data-section="THE STACK">
+    <!-- Rides at the station; the constellation trails behind it in depth,
+         so the text sweeps past first and leaves the keywords filling the screen -->
+    <div class="panel-inner" data-z="0">
+      <p class="eyebrow">04 — Tools of the Trade</p>
+      <p class="statement statement-lg">Everything we reach for when we build —
+        from the breadboard to the cloud.</p>
+    </div>
+
+    <div class="constellation" data-z="0.55">
+      <span class="node" style="left:14%;  top:26%; font-size:3.6rem; opacity:.13">Python</span>
+      <span class="node" style="left:72%;  top:19%; font-size:2.2rem; opacity:.22">React</span>
+      <span class="node" style="left:37%;  top:63%; font-size:1.4rem; opacity:.40">OpenCV</span>
+      <span class="node" style="left:86%;  top:47%; font-size:5.4rem; opacity:.08">Node.js</span>
+      <span class="node" style="left:23%;  top:44%; font-size:1.1rem; opacity:.55">ESP32</span>
+      <span class="node" style="left:58%;  top:31%; font-size:0.9rem; opacity:.65">TensorFlow</span>
+      <span class="node" style="left:64%;  top:72%; font-size:2.8rem; opacity:.16">Arduino</span>
+      <span class="node" style="left:9%;   top:74%; font-size:7.2rem; opacity:.06">MongoDB</span>
+      <span class="node" style="left:45%;  top:15%; font-size:1.7rem; opacity:.30">Firebase</span>
+      <span class="node" style="left:80%;  top:81%; font-size:1.2rem; opacity:.48">Figma</span>
+      <span class="node" style="left:30%;  top:87%; font-size:2.0rem; opacity:.24">Tailwind</span>
+      <span class="node" style="left:52%;  top:52%; font-size:0.85rem; opacity:.70">Raspberry Pi</span>
+      <span class="node" style="left:91%;  top:64%; font-size:1.5rem; opacity:.34">Linux</span>
+      <span class="node" style="left:5%;   top:48%; font-size:1.3rem; opacity:.42">MySQL</span>
+      <span class="node" style="left:68%;  top:57%; font-size:1.0rem; opacity:.58">REST APIs</span>
+      <span class="node" style="left:41%;  top:36%; font-size:1.9rem; opacity:.26">Git</span>
     </div>
   </section>
 
   <!-- TEAM -->
-  <section class="team" id="team">
-    <div class="container">
-      <p class="section-tag reveal">Who We Are</p>
-      <h2 class="section-title reveal">Meet Team99</h2>
-      <p class="section-desc reveal">A tight, capable crew — every member ships. All three of us are B.Tech students
-        in <strong>IoT &amp; Cyber Security (incl. Blockchain Technology)</strong> at
-        <strong>Gyan Ganga Institute of Technology &amp; Sciences (GGITS), Jabalpur</strong>.</p>
+  <section class="panel" id="team" data-section="TEAM">
+    <div class="panel-inner">
+      <p class="eyebrow">05 — Who We Are</p>
+      <h2 class="heading">Meet Team99</h2>
+      <p class="lede">A tight, capable crew — every member ships. All three of us are B.Tech students in
+        <b>IoT &amp; Cyber Security (incl. Blockchain Technology)</b> at
+        <b>Gyan Ganga Institute of Technology &amp; Sciences (GGITS), Jabalpur</b>.</p>
 
-      <div class="team-grid">
-        <div class="team-card reveal">
-          <div class="avatar"><img src="assets/akshat.png" alt="Akshat Singh Baghel"></div>
+      <div class="crew">
+        <article class="crew-card">
+          <figure class="frame"><img src="assets/akshat.png" alt="Akshat Singh Baghel" loading="lazy"></figure>
           <h3>Akshat Singh Baghel</h3>
           <p class="role">Founder &amp; Full Stack Developer</p>
           <p class="bio">Leads product &amp; development — builds end-to-end web systems and ties the team's work together.</p>
-          <p class="edu">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
-            B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur
-          </p>
-          <div class="socials">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          </div>
-        </div>
-        <div class="team-card reveal">
-          <div class="avatar"><img src="assets/naved.jpeg" alt="Mohammad Naved"></div>
+          <p class="edu">B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur</p>
+          <div class="links"><a href="#">GitHub</a><a href="#">LinkedIn</a></div>
+        </article>
+
+        <article class="crew-card">
+          <figure class="frame"><img src="assets/naved.jpeg" alt="Mohammad Naved" loading="lazy"></figure>
           <h3>Mohammad Naved</h3>
           <p class="role">Co-Founder &amp; Backend Developer</p>
           <p class="bio">Owns the backend, databases and system architecture powering Team99's projects.</p>
-          <p class="edu">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
-            B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur
-          </p>
-          <div class="socials">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          </div>
-        </div>
-        <div class="team-card reveal">
-          <div class="avatar"><img src="assets/aryan.jpeg" alt="Aryan Vishwakarma"></div>
+          <p class="edu">B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur</p>
+          <div class="links"><a href="#">GitHub</a><a href="#">LinkedIn</a></div>
+        </article>
+
+        <article class="crew-card">
+          <figure class="frame"><img src="assets/aryan.jpeg" alt="Aryan Vishwakarma" loading="lazy"></figure>
           <h3>Aryan Vishwakarma</h3>
           <p class="role">Co-Founder &amp; UI/UX Developer</p>
           <p class="bio">Designs and builds the interfaces — focused on speed, clarity and a polished feel.</p>
-          <p class="edu">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
-            B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur
-          </p>
-          <div class="socials">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          </div>
-        </div>
+          <p class="edu">B.Tech · IoT &amp; Cyber Security · GGITS, Jabalpur</p>
+          <div class="links"><a href="#">GitHub</a><a href="#">LinkedIn</a></div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <p class="section-tag reveal">Our Work</p>
-      <h2 class="section-title reveal">Projects</h2>
-      <p class="section-desc reveal">A look at what we've built — with a lot more on the way.</p>
+  <section class="panel" id="projects" data-section="PROJECTS">
+    <div class="panel-inner">
+      <p class="eyebrow">06 — Our Work</p>
+      <h2 class="heading">Projects</h2>
 
-      <div class="projects-grid">
+      <article class="work">
+        <div class="work-head">
+          <span class="tag">Featured</span>
+          <h3 class="work-title">Smart AI-Based<br>Attendance System</h3>
+        </div>
+        <div class="work-body">
+          <p>Manual roll calls waste class time and are easy to fake. So we built a camera-based attendance
+            system that recognizes faces in real time and logs attendance automatically — no roll calls,
+            no proxy attendance, no paperwork. It runs on low-cost hardware, so any classroom, lab or office
+            can set it up in an afternoon without a big budget. It's a direct product of what we study —
+            IoT and Cyber Security — applied to a real, everyday campus problem.</p>
 
-        <!-- Project 1: Smart AI Attendance System -->
-        <article class="project-card featured reveal">
-          <div class="project-badge">Featured Project</div>
-          <h3>Smart AI-Based Attendance System</h3>
-          <p class="project-desc">Manual roll calls waste class time and are easy to fake. So we built a
-            camera-based attendance system that recognizes faces in real time and logs attendance automatically —
-            no roll calls, no proxy attendance, no paperwork. It runs on low-cost hardware, so any classroom,
-            lab or office can set it up in an afternoon without a big budget. It's a direct product of what we
-            study — IoT and Cyber Security — applied to a real, everyday campus problem.</p>
-
-          <ul class="feature-list" id="featureList">
+          <ul class="tick-list" id="featureList">
             <li>Low cost — built with budget-friendly components</li>
             <li>Easy circuit — simple, beginner-friendly hardware design</li>
             <li>Easy setup — up and running in minutes</li>
-            <li>Fast &amp; responsive — real-time recognition and response</li>
+            <li>Fast &amp; responsive — real-time recognition</li>
             <li class="extra-feature">AI-based face recognition for accurate identification</li>
             <li class="extra-feature">Live attendance dashboard with instant updates</li>
             <li class="extra-feature">Secure cloud data storage &amp; backup</li>
             <li class="extra-feature">Multi-device &amp; multi-room compatibility</li>
           </ul>
 
-          <div class="project-actions">
-            <button class="btn btn-text" id="readMoreBtn">Read More ▾</button>
-            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View Project ↗</a>
+          <div class="actions">
+            <button class="btn btn-quiet" id="readMoreBtn" aria-expanded="false">Read More</button>
+            <a href="#" class="btn" target="_blank" rel="noopener">View Project ↗</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- Coming soon -->
-        <article class="project-card coming-soon reveal">
-          <div class="project-badge muted">Coming Soon</div>
-          <h3>More Projects on the Way</h3>
-          <p class="project-desc">We're currently building our next set of projects. Check back soon — Team99 ships often.</p>
-          <div class="soon-visual">＋</div>
-        </article>
-
-      </div>
     </div>
   </section>
 
-  <!-- JOIN US -->
-  <section class="join" id="join">
-    <div class="container join-inner">
-      <p class="section-tag reveal">How to Join</p>
-      <h2 class="section-title reveal">Welcome to the Club</h2>
-      <p class="join-text reveal">
-        We don't accept invitations to join our team — <strong>we invite people ourselves.</strong>
-        If your work catches our eye, we'll reach out. Until then, the best way in is to build something great
-        and let it speak for you. When we do call — welcome to the club.
-      </p>
+  <!-- NEXT -->
+  <section class="panel panel-center" id="next" data-section="NEXT">
+    <div class="panel-inner">
+      <p class="eyebrow">07 — In Progress</p>
+      <span class="tag tag-muted">Coming Soon</span>
+      <h2 class="heading heading-lg">More On<br>The Way</h2>
+      <p class="statement">We're currently building our next set of projects.
+        Check back soon — Team99 ships often.</p>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="panel panel-center" id="join" data-section="JOIN US">
+    <div class="panel-inner">
+      <p class="eyebrow">08 — How to Join</p>
+      <h2 class="heading">Welcome to the Club</h2>
+      <p class="statement">We don't accept invitations to join our team — <b>we invite people ourselves.</b>
+        If your work catches our eye, we'll reach out. Until then, the best way in is to build something
+        great and let it speak for you. When we do call — welcome to the club.</p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container contact-inner">
-      <h2 class="section-title reveal">Get In Touch</h2>
-      <p class="section-desc reveal">Have a project in mind or want to collaborate? Reach out to us.</p>
-      <a href="mailto:support@team99.tech" class="btn btn-primary reveal">support@team99.tech</a>
+  <section class="panel panel-center" id="contact" data-section="CONTACT">
+    <div class="panel-inner">
+      <p class="eyebrow">09 — Get In Touch</p>
+      <h2 class="heading">Say Hello</h2>
+      <p class="lede lede-center">Have a project in mind or want to collaborate? Reach out to us.</p>
+      <a href="mailto:support@team99.tech" class="mail-link">support@team99.tech</a>
+
+      <div class="end-note">
+        <span>© 2026 Team99. All rights reserved.</span>
+        <span>Built by Team99 — Akshat · Naved · Aryan</span>
+      </div>
     </div>
   </section>
 
 </main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <span>© 2026 Team99. All rights reserved.</span>
-    <span>Built by Team99 — Akshat · Naved · Aryan</span>
-  </div>
-</footer>
 
 <script src="script.js"></script>
 </body>
